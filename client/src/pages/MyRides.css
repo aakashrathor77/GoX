@@ -1,0 +1,139 @@
+
+.my-rides-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  font-family: "Inter", sans-serif;
+  color: #172033;
+}
+
+.my-rides-navbar {
+  height: 75px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.my-rides-navbar h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #172033;
+}
+
+.my-rides-navbar h2 span {
+  color: #ff8a26;
+}
+
+.my-rides-navbar a {
+  text-decoration: none;
+  color: #172033;
+  font-weight: 600;
+}
+
+.my-rides-container {
+  max-width: 900px;
+  margin: 55px auto;
+  padding: 0 20px;
+}
+
+.my-rides-container h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.my-rides-subtitle {
+  color: #718096;
+  margin-bottom: 30px;
+}
+
+.ride-history-card {
+  background: #ffffff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  border: 1px solid #e8edf5;
+  box-shadow: 0 8px 25px rgba(25, 40, 70, 0.05);
+}
+
+.ride-history-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ride-history-top h3 {
+  font-size: 21px;
+  margin: 0;
+}
+
+.ride-history-top span {
+  background: #e5f8ed;
+  color: #16834b;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ride-history-card p {
+  margin: 12px 0;
+  color: #526078;
+}
+
+.ride-history-card strong {
+  color: #172033;
+}
+
+.ride-date {
+  font-size: 13px;
+  color: #8994a7 !important;
+  border-top: 1px solid #edf0f5;
+  padding-top: 15px;
+}
+
+.no-rides {
+  text-align: center;
+  background: #ffffff;
+  padding: 45px 20px;
+  border-radius: 16px;
+}
+
+.no-rides p {
+  color: #718096;
+}
+
+.no-rides a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #ff8a26;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.my-rides-error {
+  color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .my-rides-navbar {
+    padding: 0 20px;
+  }
+
+  .my-rides-container {
+    margin-top: 35px;
+  }
+
+  .my-rides-container h1 {
+    font-size: 29px;
+  }
+
+  .ride-history-card {
+    padding: 18px;
+  }
+}

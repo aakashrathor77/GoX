@@ -1,0 +1,260 @@
+
+.ride-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: "Inter", sans-serif;
+  color: #172554;
+}
+
+.ride-navbar {
+  height: 85px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ride-navbar h2 {
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  color: #172554;
+}
+
+.ride-navbar h2 span {
+  color: #f97316;
+}
+
+.ride-nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.ride-nav-links button {
+  background: none;
+  border: none;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ride-nav-links button:hover {
+  color: #f97316;
+}
+
+.ride-hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 75px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.ride-intro {
+  padding-bottom: 30px;
+}
+
+.ride-eyebrow {
+  color: #f97316;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.ride-intro h1 {
+  font-size: clamp(42px, 5vw, 65px);
+  line-height: 1.12;
+  margin: 22px 0;
+  color: #172554;
+  font-weight: 800;
+}
+
+.ride-intro h1 span {
+  color: #f97316;
+}
+
+.ride-intro p {
+  max-width: 420px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+.ride-booking-card {
+  background: #ffffff;
+  padding: 38px;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.ride-booking-card h2 {
+  font-size: 26px;
+  color: #172554;
+  margin-bottom: 8px;
+}
+
+.ride-booking-card > p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.ride-booking-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ride-booking-card label {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 15px 0 9px;
+  color: #334155;
+}
+
+.ride-booking-card input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  color: #334155;
+  background: #f8fafc;
+  transition: 0.3s;
+}
+
+.ride-booking-card input:focus {
+  border-color: #f97316;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+.ride-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 8px 0 25px;
+}
+
+.ride-option {
+  padding: 15px 8px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  transition: 0.3s;
+}
+
+.ride-option span {
+  font-size: 25px;
+}
+
+.ride-option:hover,
+.ride-option.active {
+  border-color: #f97316;
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.calculate-ride-btn {
+  padding: 16px;
+  background: #f97316;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calculate-ride-btn:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+}
+
+.fare-result {
+  margin-top: 25px;
+  padding: 22px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 14px;
+}
+
+.fare-result span {
+  font-size: 13px;
+  color: #9a3412;
+  font-weight: 600;
+}
+
+.fare-result h2 {
+  color: #ea580c;
+  font-size: 32px;
+  margin: 8px 0;
+}
+
+.fare-result p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.fare-result small {
+  display: block;
+  margin-top: 10px;
+  color: #9a3412;
+  line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+  .ride-hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 45px 20px;
+  }
+
+  .ride-intro {
+    text-align: center;
+  }
+
+  .ride-intro p {
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .ride-navbar {
+    padding: 0 5%;
+    height: 75px;
+  }
+
+  .ride-navbar h2 {
+    font-size: 25px;
+  }
+
+  .ride-nav-links {
+    gap: 10px;
+  }
+
+  .ride-nav-links button {
+    font-size: 11px;
+  }
+
+  .ride-booking-card {
+    padding: 22px;
+  }
+}

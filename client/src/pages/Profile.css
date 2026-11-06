@@ -1,0 +1,242 @@
+
+.profile-page {
+  min-height: 100vh;
+  background: #f4f7fc;
+  font-family: 'Inter', sans-serif;
+  color: #14213d;
+}
+
+.profile-navbar {
+  height: 82px;
+  padding: 0 8%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 20px rgba(20, 33, 61, 0.05);
+}
+
+.profile-navbar h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #14213d;
+  cursor: pointer;
+  margin: 0;
+}
+
+.profile-navbar h2 span {
+  color: #ff8b35;
+}
+
+.profile-navbar button {
+  background: #ff8b35;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-navbar button:hover {
+  background: #ed7621;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 45px 20px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 620px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(20, 33, 61, 0.08);
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #ffeadb;
+  color: #ff8b35;
+  font-size: 40px;
+  font-weight: 800;
+  border: 4px solid #fff2e9;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card h1 {
+  color: #14213d;
+  font-size: 29px;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.profile-subtitle {
+  color: #788399;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.profile-form label,
+.profile-password-section label {
+  color: #34415a;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 15px 0 8px;
+}
+
+.profile-form input,
+.profile-form textarea,
+.profile-password-section input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce2ed;
+  border-radius: 9px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  color: #14213d;
+  background: #fbfcff;
+  transition: 0.2s;
+}
+
+.profile-form input:focus,
+.profile-form textarea:focus,
+.profile-password-section input:focus {
+  border-color: #ff8b35;
+  box-shadow: 0 0 0 3px rgba(255, 139, 53, 0.12);
+}
+
+.profile-form input:disabled {
+  background: #f0f2f6;
+  color: #788399;
+  cursor: not-allowed;
+}
+
+.profile-form textarea {
+  resize: vertical;
+}
+
+.profile-form button,
+.profile-password-section button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #ff8b35;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-form button:hover,
+.profile-password-section button:hover {
+  background: #ed7621;
+}
+
+.profile-form button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.profile-password-section {
+  margin-top: 35px;
+  padding-top: 28px;
+  border-top: 1px solid #e9edf4;
+  text-align: left;
+}
+
+.profile-password-section h2 {
+  font-size: 21px;
+  color: #14213d;
+  margin-bottom: 18px;
+}
+
+.profile-password-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-success,
+.profile-error {
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.profile-success {
+  background: #e9f9ef;
+  color: #168344;
+}
+
+.profile-error {
+  background: #fff0f0;
+  color: #d63030;
+}
+
+.profile-loading {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #14213d;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .profile-navbar {
+    height: 72px;
+    padding: 0 5%;
+  }
+
+  .profile-navbar h2 {
+    font-size: 26px;
+  }
+
+  .profile-navbar button {
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+
+  .profile-container {
+    padding: 25px 13px;
+  }
+
+  .profile-card {
+    padding: 28px 20px;
+  }
+
+  .profile-card h1 {
+    font-size: 25px;
+  }
+}
